@@ -1,185 +1,323 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Profil Saya</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="asset/css/styleVALUEJS.css" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portofolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <!-- 1Untuk mengisi perubahan pada form, maka akan bisa diterapkan pada form. 
-           Mengubah Button Contact menjadi Button Edit
-           hal 1 : memberikan identitas pada setiap Komponen pada script HTML Kita
-           jadi setiap komponen kita berikan nama/id supaya lebih mudah untuk mengubah nanti. 
-       -->
-  <body>
-    <nav>
-      <div class="menu-mobile">
-        <!-- 2tambahkan -->
-        <a href="#" onclick="showMenu()">menu</a>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav"
+    >
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Muhammad Ilham Karisma</span>
+        <span class="d-none d-lg-block"
+          ><img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="./assets/img/1710992755886-KK_0785 copy.webp"
+            alt="..."
+        /></span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests"
+              >Interests</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards"
+              >Certifications</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Sesi7">Sesi7</a>
+          </li>
+        </ul>
       </div>
-      <ul id="menu">
-        <li><a href="/">HOME</a></li>
-        <li><a href="#">GALLERY</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/ilhamosaurus" target="_blank"
-            >LinkedIn</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/ilhamosaurus" target="_blank">GitHub</a>
-        </li>
-      </ul>
     </nav>
-
-    <section id="box-profile">
-      <div class="img-profile">
-        <div
-          class="photo"
-          style="
-            background-image: url(file:///Users/swijaya/Downloads/WFDB2/portfoliotm6/asset/image/download.jpeg);
-          "
-        >
-          <img src="asset\image\download.jpeg" alt="" />
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+      <!-- About-->
+      <section class="resume-section" id="about">
+        <div class="resume-section-content">
+          <h1 class="mb-0">
+            Muhammad
+            <span class="text-primary">Ilham</span>
+            Karisma
+          </h1>
+          <div class="subheading mb-5">
+            52125 Batang · Central Java · Indonesia ·
+            <a href="mailto:ilhamsssa@gmail.com">ilhamsssa@gmail.com</a>
+          </div>
+          <p class="lead mb-5">
+            Results-driven professional with 4 years of experience in the Sharia
+            banking industry, transitioning to Back-End Development. Possesses
+            strong technical skills in JavaScript, NodeJS, and C#. Demonstrated
+            ability to design and implement internal web applications and APIs,
+            collaborate effectively with senior developers, and optimize code
+            for performance improvement (e.g., 20% increase in web application
+            performance). Eager to leverage analytical and problemsolving skills
+            within a Back-End Developer role.
+          </p>
+          <div class="social-icons">
+            <a
+              class="social-icon"
+              href="https://www.linkedin.com/in/ilhamosaurus"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="social-icon"
+              href="https://github.com/ilhamosaurus"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
         </div>
-      </div>
-      <div class="description">
-        <h1 id="pName">Muhammad Ilham Karisma</h1>
-        <p id="pRole">Backend Developer</p>
-        <button href="#input-form" class="button bg-blue" onclick="editForm()">
-          Edit
-        </button>
-        <a href="#" class="button border-green">Resume</a>
-      </div>
-      <div class="information">
-        <div class="data">
-          <p class="field">Availability</p>
-          <p id="pAvailable" class="text-gray">Full Time</p>
+      </section>
+      <hr class="m-0" />
+      <!-- Experience-->
+      <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Experience</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Junior Backend Developer</h3>
+              <div class="subheading mb-3">PT Riyan Solusi Teknologi</div>
+              <p>
+                Developed web applications using JavaScript, TypeScript, NestJS,
+                NextJs, and Prisma ORM. Created and maintained APIs for data
+                integrations. Collaborated with senior developers to complete
+                complex tasks. Participated in code review and debugging
+                processes. Successfully completed web applications performance
+                by 20% through code optimazations. Server-side logis and API
+                documentations main provider. Provide Entity Relations Database.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">January 2024 - Present</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Operational Officer</h3>
+              <div class="subheading mb-3">PT Bank Syariah Indonesia Tbk</div>
+              <p>
+                Implement optimized organizational guidelines and procedures,
+                resulting in 130% improvement in customer service response time.
+                Directed delegated daily operations, coordinated tasks and
+                workloads, and monitored team performance to ensure efficiency
+                and accuracy. Utilized data to identify areas of improvement and
+                implemented strategies to increase productivity and quality of
+                output, resulting in a 25% rise in task completion rate.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">July 2019 - March 2023</span>
+            </div>
+          </div>
         </div>
-        <div class="data">
-          <p class="field">Usia</p>
-          <p id="pAge" class="text-gray">27</p>
+      </section>
+      <hr class="m-0" />
+      <!-- Education-->
+      <section class="resume-section" id="education">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Education</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">STIE Bank BPD Jateng</h3>
+              <div class="subheading mb-3">Bachelor of Management</div>
+              <p>GPA: 3.15</p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">September 2014 - March 2019</span>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">SMA Negeri 3 Pekalongan</h3>
+              <div class="subheading mb-3">IPS</div>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">July 2011 - May 2014</span>
+            </div>
+          </div>
         </div>
-        <div class="data">
-          <p class="field">Lokasi</p>
-          <p id="pLocation" class="text-gray">Batang</p>
+      </section>
+      <hr class="m-0" />
+      <!-- Skills-->
+      <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Skills</h2>
+          <div class="subheading mb-3">Programming Languages & Tools</div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+            <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+            <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+            <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+            <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+            <li class="list-inline-item"><i class="fab fa-python"></i></li>
+            <li class="list-inline-item">
+              <i class="fa-solid fa-database"></i>
+            </li>
+            <li class="list-inline-item"><i class="fab fa-git-alt"></i></li>
+            <li class="list-inline-item"><i class="fab fa-github"></i></li>
+            <li class="list-inline-item">And many more</li>
+          </ul>
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              ERD, Set up database
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Framework and Authentication method
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Building and testing
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Cross teamwork and integrations
+            </li>
+          </ul>
         </div>
-        <div class="data">
-          <p class="field">Pengalaman</p>
-          <p id="pExperience" class="text-gray">1</p>
+      </section>
+      <hr class="m-0" />
+      <!-- Interests-->
+      <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Interests</h2>
+          <p>
+            Apart from being a backend developer, I enjoy most of my time being
+            outdoors. I enjoy mountain biking, travelling, and culinary.
+          </p>
+          <p class="mb-0">
+            When forced indoors, I follow a number of sci-fi and fantasy genre
+            movies and television shows and I spend a large amount of my free
+            time exploring the latest technology advancements in the front-end
+            web development world.
+          </p>
         </div>
-        <div class="data">
-          <p class="field">Email</p>
-          <p id="pEmail" class="text-gray">ilhamsssa@gmail.com</p>
+      </section>
+      <hr class="m-0" />
+      <!-- Awards-->
+      <section class="resume-section" id="awards">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              Backend Development and APIs - freeCodeCamp
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              Foundational Backend - Dicoding Indonesia
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              Foundational Javascript - Dicoding Indonesia
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              Cloud Practitioner Essential - Dicoding Indonesia
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              Foundational C# with Microsoft - freeCodeCamp
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              Responsive Web Design - freeCodeCamp
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
-
-    <section id="input-form">
-      <form method="#" action="#">
-        <div class="form">
-          <label>Nama</label>
-          <input
-            id="inpName"
-            type="text"
-            name="nama"
-            placeholder="masukkan nama anda"
-          />
+      </section>
+      <section class="resume-section" id="Sesi7">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Sesi 7</h2>
+          <a href="./Sesi7/index.html" target="_blank">Klik Disini</a>
         </div>
-        <div class="form">
-          <label>Role</label>
-          <input id="inpRole" type="text" name="role" />
-        </div>
-        <div class="form">
-          <label>Availability</label>
-          <input id="inpAvailability" type="text" name="Availability" />
-        </div>
-        <div class="form">
-          <label>Usia</label>
-          <input id="inpUsia" type="number" name="usia" />
-        </div>
-        <div class="form">
-          <label>Lokasi</label>
-          <input id="inpLokasi" type="text" name="lokasi" />
-        </div>
-        <div class="form">
-          <label>Years Experience</label>
-          <input id="inpYears" type="number" name="experience" />
-        </div>
-        <div class="form">
-          <label>Email</label>
-          <input id="inpEmail" type="email" name="email" />
-        </div>
-        <div class="form">
-          <input
-            onclick="simpanForm()"
-            type="submit"
-            name="submit"
-            value="SUBMIT"
-            class="bg-green"
-          />
-        </div>
-      </form>
-    </section>
-
-    <script>
-      var formMenu = document.getElementById('input-form');
-      formMenu.style.display = 'none';
-
-      function editForm() {
-        if (formMenu.style.display === 'none') {
-          formMenu.style.display = 'block';
-        } else {
-          formMenu.style.display = 'none';
-        }
-
-        var name = document.getElementById('pName').innerHTML;
-        var role = document.getElementById('pRole').innerHTML;
-        var available = document.getElementById('pAvailable').innerHTML;
-        var usia = document.getElementById('pAge').innerHTML;
-        var lokasi = document.getElementById('pLocation').innerHTML;
-        var experience = document.getElementById('pExperience').innerHTML;
-        var email = document.getElementById('pEmail').innerHTML;
-
-        document.getElementById('inpName').value = name;
-        document.getElementById('inpRole').value = role;
-        document.getElementById('inpAvailability').value = available;
-        document.getElementById('inpUsia').value = usia;
-        document.getElementById('inpLokasi').value = lokasi;
-        document.getElementById('inpYears').value = experience;
-        document.getElementById('inpEmail').value = email;
-      }
-      function simpanForm() {
-        var name = document.getElementById('inpName').value;
-        var role = document.getElementById('inpRole').value;
-        var available = document.getElementById('inpAvailability').value;
-        var usia = document.getElementById('inpUsia').value;
-        var lokasi = document.getElementById('inpLokasi').value;
-        var experience = document.getElementById('inpYears').value;
-        var email = document.getElementById('inpEmail').value;
-
-        document.getElementById('pName').innerHTML = name;
-        document.getElementById('pRole').innerHTML = role;
-        document.getElementById('pAvailable').innerHTML = available;
-        document.getElementById('pAge').innerHTML = usia;
-        document.getElementById('pLocation').innerHTML = lokasi;
-        document.getElementById('pExperience').innerHTML = experience;
-        document.getElementById('pEmail').innerHTML = email;
-
-        formMenu.style.display = 'none';
-      }
-
-      function showMenu() {
-        var menu = document.getElementById('menu');
-        var box = document.getElementById('box-profile');
-
-        if (menu.style.display === 'block') {
-          menu.style.display = 'none';
-          box.style.paddingTop = '0px';
-        } else {
-          menu.style.display = 'block';
-          box.style.paddingTop = '125px';
-        }
-      }
-    </script>
+      </section>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
   </body>
 </html>
